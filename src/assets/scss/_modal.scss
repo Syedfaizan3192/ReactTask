@@ -1,0 +1,21 @@
+.modal-dialog {
+  .modal-body {
+    .modal-body-data {
+      img {
+        max-width: 100%;
+        width: 100px;
+      }
+      .column-name {
+        font-weight: 600;
+        font-family: "Times New Roman", Times, serif;
+        font-style: inherit;
+        font-size: 22px;
+      }
+      .data {
+        font-family: "Times New Roman", Times, serif;
+        font-style: inherit;
+        font-size: 15px;
+      }
+    }
+  }
+}
