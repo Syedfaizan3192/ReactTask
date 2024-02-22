@@ -2,8 +2,12 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import Item from "./Item";
 import { Row, Col } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 
-const List = () => {
+import { useEffect } from "react";
+import { fetchUsers } from "../redux/UserSlice";
+
+const List = ({ data }) => {
   return (
     <div className="list-item">
       <div className="headers mb-5">
@@ -13,7 +17,7 @@ const List = () => {
           <Col ms={"4"}>URL</Col>
         </Row>
       </div>
-      <Item />
+      <Item data={data} />
     </div>
   );
 };
